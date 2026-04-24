@@ -1,0 +1,17 @@
+<h2>Agendar</h2>
+
+<form method="POST">
+<input name="nome" placeholder="Nome"><br>
+<input name="telefone" placeholder="Telefone"><br>
+
+<select name="servico">
+{% for s in servicos.values() %}
+<option>{{s.nome}}</option>
+{% endfor %}
+</select><br>
+
+<input name="data" type="date"><br>
+<input name="hora" type="time"><br>
+
+<button>Agendar</button>
+</form>
